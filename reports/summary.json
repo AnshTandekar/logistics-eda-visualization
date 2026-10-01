@@ -1,0 +1,481 @@
+{
+  "kpis": {
+    "shipments": 12000,
+    "total_freight_cost": 1535367.2000000002,
+    "avg_cost_per_kg": 5.182173805330525,
+    "avg_lead_days": 3.266149189300811,
+    "on_time_rate_pct": 86.61666666666666,
+    "avg_rating": 4.503916666666667
+  },
+  "descriptive": {
+    "distance_km": {
+      "mean": 1015.49,
+      "median": 1020.2,
+      "std": 561.35,
+      "min": 114.1,
+      "max": 2343.8,
+      "skew": -0.09,
+      "iqr": 699.0,
+      "cv_%": 55.28
+    },
+    "weight_kg": {
+      "mean": 24.69,
+      "median": 18.1,
+      "std": 22.67,
+      "min": 0.6,
+      "max": 260.8,
+      "skew": 2.54,
+      "iqr": 22.5,
+      "cv_%": 91.8
+    },
+    "units": {
+      "mean": 28.74,
+      "median": 22.0,
+      "std": 25.55,
+      "min": 1.0,
+      "max": 324.0,
+      "skew": 2.54,
+      "iqr": 26.0,
+      "cv_%": 88.89
+    },
+    "order_value": {
+      "mean": 4429.78,
+      "median": 3150.68,
+      "std": 4392.96,
+      "min": 210.8,
+      "max": 71854.89,
+      "skew": 3.77,
+      "iqr": 3611.32,
+      "cv_%": 99.17
+    },
+    "freight_cost": {
+      "mean": 127.95,
+      "median": 125.68,
+      "std": 40.62,
+      "min": 46.43,
+      "max": 344.09,
+      "skew": 0.6,
+      "iqr": 52.13,
+      "cv_%": 31.75
+    },
+    "processing_hours": {
+      "mean": 15.52,
+      "median": 12.03,
+      "std": 10.11,
+      "min": 2.18,
+      "max": 58.2,
+      "skew": 1.21,
+      "iqr": 13.96,
+      "cv_%": 65.17
+    },
+    "transit_days": {
+      "mean": 2.62,
+      "median": 2.58,
+      "std": 1.35,
+      "min": 0.4,
+      "max": 7.6,
+      "skew": 0.24,
+      "iqr": 1.86,
+      "cv_%": 51.52
+    },
+    "lead_days": {
+      "mean": 3.27,
+      "median": 3.23,
+      "std": 1.42,
+      "min": 0.5,
+      "max": 9.0,
+      "skew": 0.25,
+      "iqr": 1.97,
+      "cv_%": 43.47
+    },
+    "delay_days": {
+      "mean": -0.44,
+      "median": -1.0,
+      "std": 0.89,
+      "min": -3.0,
+      "max": 3.0,
+      "skew": 0.46,
+      "iqr": 1.0,
+      "cv_%": -200.43
+    }
+  },
+  "corr_freight": {
+    "distance_km": 0.74,
+    "weight_kg": 0.56,
+    "order_value": 0.18,
+    "freight_cost": 1.0,
+    "processing_hours": 0.01,
+    "transit_days": 0.62,
+    "delay_days": -0.09,
+    "customer_rating": -0.01
+  },
+  "corr_rating": {
+    "distance_km": -0.02,
+    "weight_kg": -0.01,
+    "order_value": -0.0,
+    "freight_cost": -0.01,
+    "processing_hours": -0.15,
+    "transit_days": -0.1,
+    "delay_days": -0.25,
+    "customer_rating": 1.0
+  },
+  "spearman_freight_weight": 0.45,
+  "pearson_freight_weight": 0.56,
+  "by_carrier": {
+    "CargoNova": {
+      "shipments": 2624,
+      "cost_per_kg": 5.88,
+      "avg_lead": 3.76,
+      "late_pct": 26.56
+    },
+    "QuickHaul": {
+      "shipments": 2209,
+      "cost_per_kg": 6.63,
+      "avg_lead": 3.53,
+      "late_pct": 18.74
+    },
+    "RoadLink": {
+      "shipments": 3650,
+      "cost_per_kg": 6.58,
+      "avg_lead": 3.3,
+      "late_pct": 10.66
+    },
+    "SwiftFreight": {
+      "shipments": 3517,
+      "cost_per_kg": 6.82,
+      "avg_lead": 2.69,
+      "late_pct": 3.01
+    }
+  },
+  "by_city": {
+    "Bengaluru": {
+      "shipments": 2341,
+      "avg_cost": 125.94,
+      "avg_lead": 3.15,
+      "late_pct": 8.37
+    },
+    "Chennai": {
+      "shipments": 1822,
+      "avg_cost": 145.74,
+      "avg_lead": 4.02,
+      "late_pct": 22.01
+    },
+    "Delhi": {
+      "shipments": 2226,
+      "avg_cost": 148.79,
+      "avg_lead": 4.05,
+      "late_pct": 12.8
+    },
+    "Hyderabad": {
+      "shipments": 1816,
+      "avg_cost": 110.22,
+      "avg_lead": 2.57,
+      "late_pct": 13.93
+    },
+    "Kolkata": {
+      "shipments": 1379,
+      "avg_cost": 178.23,
+      "avg_lead": 5.33,
+      "late_pct": 17.55
+    },
+    "Pune": {
+      "shipments": 2416,
+      "avg_cost": 81.89,
+      "avg_lead": 1.43,
+      "late_pct": 9.48
+    }
+  },
+  "category_counts": {
+    "Grocery": 3509,
+    "Beverages": 2458,
+    "Household": 2391,
+    "Personal Care": 1849,
+    "Electronics": 1793
+  },
+  "date_min": "2024-01-01",
+  "date_max": "2024-12-31",
+  "viz": {
+    "proc_before_cutoff": 7.9,
+    "proc_after_cutoff": 21.5,
+    "corr_daily_proc": 0.73,
+    "proc_slope_per_10_orders": 0.88,
+    "cpk_by_weight_band": {
+      "<10 kg": 17.47,
+      "10-30 kg": 6.59,
+      "30-100 kg": 3.19,
+      ">100 kg": 1.74
+    },
+    "shipments_by_weight_band": {
+      "<10 kg": 3189,
+      "10-30 kg": 5506,
+      "30-100 kg": 3143,
+      ">100 kg": 162
+    },
+    "worst_pocket": [
+      "CargoNova",
+      "Chennai"
+    ],
+    "worst_pocket_pct": 38.8,
+    "delay_reason_share": {
+      "Transit / road": 27.3,
+      "Warehouse backlog": 23.7,
+      "Carrier capacity": 23.5,
+      "Address / customer": 14.5,
+      "Weather": 11.0
+    },
+    "rating_by_delay": {
+      "On time": 4.57,
+      "1 day late": 4.14,
+      "2 days late": 3.69,
+      "3+ days late": 3.36
+    },
+    "late_by_dow": {
+      "0": 10.4,
+      "1": 10.0,
+      "2": 10.1,
+      "3": 10.0,
+      "4": 9.9,
+      "5": 34.6,
+      "6": 17.1
+    },
+    "late_by_month": {
+      "1": 6.2,
+      "2": 8.9,
+      "3": 9.0,
+      "4": 8.3,
+      "5": 7.5,
+      "6": 7.9,
+      "7": 18.2,
+      "8": 21.4,
+      "9": 20.5,
+      "10": 19.4,
+      "11": 18.5,
+      "12": 10.3
+    },
+    "monthly_shipments": {
+      "1": 918,
+      "2": 827,
+      "3": 970,
+      "4": 919,
+      "5": 976,
+      "6": 877,
+      "7": 902,
+      "8": 896,
+      "9": 970,
+      "10": 1415,
+      "11": 1241,
+      "12": 1089
+    },
+    "late_grid": {
+      "Mon": {
+        "8-10": 3.2,
+        "11-13": 4.0,
+        "14-16": 9.4,
+        "17-19": 18.5,
+        "20-21": 25.8
+      },
+      "Tue": {
+        "8-10": 4.0,
+        "11-13": 3.4,
+        "14-16": 8.5,
+        "17-19": 18.0,
+        "20-21": 30.2
+      },
+      "Wed": {
+        "8-10": 3.5,
+        "11-13": 2.8,
+        "14-16": 9.5,
+        "17-19": 18.3,
+        "20-21": 21.2
+      },
+      "Thu": {
+        "8-10": 1.7,
+        "11-13": 4.8,
+        "14-16": 7.9,
+        "17-19": 20.6,
+        "20-21": 15.2
+      },
+      "Fri": {
+        "8-10": 1.5,
+        "11-13": 2.5,
+        "14-16": 8.2,
+        "17-19": 22.0,
+        "20-21": 22.6
+      },
+      "Sat": {
+        "8-10": 5.1,
+        "11-13": 8.5,
+        "14-16": 34.2,
+        "17-19": 73.8,
+        "20-21": 80.9
+      },
+      "Sun": {
+        "8-10": 13.3,
+        "11-13": 19.9,
+        "14-16": 16.0,
+        "17-19": 18.8,
+        "20-21": 8.6
+      }
+    },
+    "share_orders_after_cutoff": 41.4,
+    "late_share_from_after_cutoff": 79.0,
+    "orders_by_dow": {
+      "0": 17.8,
+      "1": 17.3,
+      "2": 16.0,
+      "3": 16.6,
+      "4": 15.0,
+      "5": 11.9,
+      "6": 5.4
+    },
+    "max_daily_orders": 75,
+    "mean_daily_orders": 32.8,
+    "late_by_cutoff": {
+      "0": 4.8,
+      "1": 25.5
+    }
+  },
+  "models": {
+    "ols_r2": 0.919,
+    "ols_coef": {
+      "Intercept": 54.696,
+      "C(carrier, Treatment('SwiftFreight'))[T.CargoNova]": -21.725,
+      "C(carrier, Treatment('SwiftFreight'))[T.QuickHaul]": -5.434,
+      "C(carrier, Treatment('SwiftFreight'))[T.RoadLink]": -11.307,
+      "distance_km": 0.054,
+      "weight_kg": 0.992,
+      "peak_season": 14.72
+    },
+    "ols_p_max": 3.160749864112709e-66,
+    "logit_auc": 0.877,
+    "odds": {
+      "C(carrier, Treatment('SwiftFreight'))[T.CargoNova]": {
+        "odds_ratio": 18.42,
+        "low": 14.15,
+        "high": 23.97
+      },
+      "C(carrier, Treatment('SwiftFreight'))[T.QuickHaul]": {
+        "odds_ratio": 10.3,
+        "low": 7.87,
+        "high": 13.49
+      },
+      "C(carrier, Treatment('SwiftFreight'))[T.RoadLink]": {
+        "odds_ratio": 4.09,
+        "low": 3.14,
+        "high": 5.33
+      },
+      "after_cutoff": {
+        "odds_ratio": 11.54,
+        "low": 9.73,
+        "high": 13.7
+      },
+      "sat_order": {
+        "odds_ratio": 11.79,
+        "low": 9.38,
+        "high": 14.82
+      },
+      "sun_order": {
+        "odds_ratio": 3.53,
+        "low": 2.34,
+        "high": 5.31
+      },
+      "orders_per_10": {
+        "odds_ratio": 1.14,
+        "low": 1.02,
+        "high": 1.28
+      },
+      "distance_100km": {
+        "odds_ratio": 1.07,
+        "low": 1.05,
+        "high": 1.08
+      },
+      "peak_season": {
+        "odds_ratio": 3.3,
+        "low": 2.52,
+        "high": 4.31
+      },
+      "monsoon": {
+        "odds_ratio": 4.27,
+        "low": 3.63,
+        "high": 5.04
+      }
+    },
+    "whatif": {
+      "Baseline": 86.6,
+      "A: cut-off fix": 93.0,
+      "B: Sunday dispatch": 90.3,
+      "A + B combined": 95.3,
+      "C: lane reallocation": 90.8
+    },
+    "gap_hours": 13.6,
+    "pushed_shipments": 1305,
+    "pockets": [
+      {
+        "carrier": "CargoNova",
+        "destination_city": "Chennai",
+        "n": 405,
+        "late": 0.39,
+        "cost": 52467.61,
+        "kg": 9874.2,
+        "swift_late": 0.06,
+        "avoided": 133.22,
+        "cost_ratio": 1.17,
+        "extra_cost": 8800.17
+      },
+      {
+        "carrier": "CargoNova",
+        "destination_city": "Hyderabad",
+        "n": 403,
+        "late": 0.3,
+        "cost": 40734.8,
+        "kg": 9540.1,
+        "swift_late": 0.04,
+        "avoided": 104.71,
+        "cost_ratio": 1.23,
+        "extra_cost": 9280.4
+      },
+      {
+        "carrier": "CargoNova",
+        "destination_city": "Kolkata",
+        "n": 305,
+        "late": 0.33,
+        "cost": 48234.88,
+        "kg": 7031.1,
+        "swift_late": 0.03,
+        "avoided": 91.19,
+        "cost_ratio": 1.15,
+        "extra_cost": 7442.59
+      },
+      {
+        "carrier": "QuickHaul",
+        "destination_city": "Chennai",
+        "n": 309,
+        "late": 0.39,
+        "cost": 46199.37,
+        "kg": 7351.1,
+        "swift_late": 0.06,
+        "avoided": 100.85,
+        "cost_ratio": 0.99,
+        "extra_cost": -587.01
+      },
+      {
+        "carrier": "QuickHaul",
+        "destination_city": "Kolkata",
+        "n": 245,
+        "late": 0.31,
+        "cost": 45202.87,
+        "kg": 6295.9,
+        "swift_late": 0.03,
+        "avoided": 68.93,
+        "cost_ratio": 1.1,
+        "extra_cost": 4652.74
+      }
+    ],
+    "lane_avoided": 499.0,
+    "lane_extra_cost": 29589.0,
+    "lane_cost_per_avoided": 59.0,
+    "lane_shipments": 1667,
+    "total_cost": 1535367.0,
+    "total_late": 1606
+  }
+}
